@@ -1,0 +1,114 @@
+{
+  "id": "en_US",
+  "displayName": "English  USA",
+  "fakerLocale": "en",
+  "direction": "ltr",
+  "yearMin": 1964,
+  "yearMax": 2026,
+  "titlePatterns": [
+    "The {noun}",
+    "{adjective} {noun}",
+    "{place} After Dark",
+    "The Last {role}",
+    "A {noun} in {place}",
+    "When {place} Sleeps",
+    "{number} Miles Home",
+    "Letters from {place}",
+    "No One Leaves {place}",
+    "The {color} Hour",
+    "Between {noun} and {noun}",
+    "{role} of the {direction}"
+  ],
+  "genres": [
+    "Drama",
+    "Crime",
+    "Science fiction",
+    "Mystery",
+    "Romance",
+    "Adventure",
+    "Thriller",
+    "Comedy",
+    "Documentary"
+  ],
+  "reviewPatterns": [
+    "A patient, beautifully observed story with a memorable final scene.",
+    "The cast makes every quiet moment feel earned.",
+    "It takes a little time to find its rhythm, then it stays with you.",
+    "Sharp writing, confident direction, and a soundtrack worth hearing loud.",
+    "The middle wanders, but the ending lands with real feeling.",
+    "A bold idea carried by intimate performances.",
+    "Visually precise without losing the human story underneath.",
+    "I expected spectacle and found something far more personal.",
+    "The chemistry between the leads gives the film its pulse.",
+    "A small story told with uncommon care."
+  ],
+  "trailerPhrases": [
+    "Every road remembers",
+    "Some doors open twice",
+    "Tonight, the city listens",
+    "The truth arrives quietly",
+    "One choice changes the distance",
+    "Nothing stays buried forever",
+    "This summer, come back home",
+    "A secret has its own weather"
+  ],
+  "creditPatterns": [
+    "Starring {actor}",
+    "A new story from {year}",
+    "Featuring {actor}",
+    "An original motion picture"
+  ],
+  "words": {
+    "noun": [
+      "Passenger",
+      "Signal",
+      "Harbor",
+      "Witness",
+      "Promise",
+      "Echo",
+      "Map",
+      "Season",
+      "Window",
+      "Current",
+      "Orchard",
+      "Border"
+    ],
+    "adjective": [
+      "Silent",
+      "Northern",
+      "Restless",
+      "Distant",
+      "Electric",
+      "Tender",
+      "Hidden",
+      "Golden",
+      "Familiar",
+      "Private"
+    ],
+    "place": [
+      "New York",
+      "Savannah",
+      "Lake Erie",
+      "Santa Fe",
+      "Portland",
+      "Memphis",
+      "Cape May",
+      "Detroit",
+      "Monterey",
+      "Brooklyn"
+    ],
+    "role": [
+      "Driver",
+      "Photographer",
+      "Astronaut",
+      "Neighbor",
+      "Detective",
+      "Gardener",
+      "Composer",
+      "Courier"
+    ],
+    "number": ["Seven", "Nine", "Eleven", "Twenty", "Forty"],
+    "color": ["Blue", "Amber", "Silver", "Violet", "Red"],
+    "direction": ["West", "North", "East", "South"]
+  }
+}

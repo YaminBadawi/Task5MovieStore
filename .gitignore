@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.vscode/
+TestResults/
+output/
+*.user
+*.suo
+*.cache
+*.log
+.DS_Store

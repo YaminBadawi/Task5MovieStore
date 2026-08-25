@@ -1,0 +1,27 @@
+{
+  "sceneTypes": [
+    "city",
+    "desert",
+    "ocean",
+    "forest",
+    "tunnel",
+    "space",
+    "storm",
+    "corridor"
+  ],
+  "transitions": ["fade", "iris", "wipe", "flash", "shutter"],
+  "posterLayouts": ["split", "portrait", "horizon", "type", "window"],
+  "posterMotifs": ["sun", "moon", "road", "window", "signal", "wave", "tower", "orbit"],
+  "palettes": [
+    ["#11131a", "#7b172a", "#f0b35c"],
+    ["#0c1f2f", "#2c6e73", "#f2d492"],
+    ["#24151b", "#aa5b3b", "#f4dfb4"],
+    ["#101b17", "#385d43", "#d9c984"],
+    ["#151323", "#53418c", "#e89da4"],
+    ["#10151f", "#325880", "#c5e2ee"],
+    ["#1d1611", "#a35f2d", "#f5cd85"],
+    ["#161616", "#5c5c59", "#e2e0d8"],
+    ["#1d1020", "#8b284f", "#f1b6a1"],
+    ["#071d21", "#167178", "#f2ba5a"]
+  ]
+}

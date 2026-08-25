@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2efe8">
+  <title>Lumen Cinema</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="/" aria-label="Lumen Cinema home">
+      <span class="wordmarkMark" aria-hidden="true">L</span>
+      <span>Lumen Cinema</span>
+    </a>
+    <div class="edition">
+      <span>Generative film catalogue</span>
+      <span id="editionSeed">Seed</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="pageTitle">
+      <p class="kicker">Now showing  An endless programme</p>
+      <h1 id="pageTitle">Stories change.<br>The seed remembers.</h1>
+      <p class="introCopy">Choose a market, tune the audience, and browse a cinema catalogue made for this exact moment.</p>
+    </section>
+
+    <section class="controlDeck" aria-label="Catalogue controls">
+      <div class="controlRail">
+        <label class="control controlLocale">
+          <span>Market</span>
+          <select id="localeInput" aria-label="Market"></select>
+        </label>
+
+        <label class="control controlSeed">
+          <span>Seed</span>
+          <input id="seedInput" type="text" inputmode="numeric" maxlength="15" autocomplete="off" spellcheck="false" aria-label="Seed">
+        </label>
+
+        <button id="randomSeedButton" class="seedButton" type="button" aria-label="Create a new random seed">
+          <span class="seedIcon" aria-hidden="true">✦</span>
+          <span>New seed</span>
+        </button>
+
+        <label class="control controlNumber">
+          <span>Average likes</span>
+          <input id="likesInput" type="number" min="0" max="10" step="0.1" value="3.5" inputmode="decimal" aria-label="Average likes">
+        </label>
+
+        <label class="control controlNumber">
+          <span>Average reviews</span>
+          <input id="reviewsInput" type="number" min="0" max="10" step="0.1" value="2.5" inputmode="decimal" aria-label="Average reviews">
+        </label>
+
+        <div class="viewSwitch" role="group" aria-label="View">
+          <span>View</span>
+          <div>
+            <button id="tableViewButton" class="active" type="button" aria-pressed="true">Table</button>
+            <button id="galleryViewButton" type="button" aria-pressed="false">Gallery</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalogue" aria-live="polite" aria-busy="false">
+      <div class="catalogueHead">
+        <div>
+          <p class="sectionNumber">Catalogue  <span id="cataloguePage">Page 1</span></p>
+          <h2>Tonight’s programme</h2>
+        </div>
+        <p id="statusText" class="statusText">Preparing the programme</p>
+      </div>
+
+      <div id="errorPanel" class="errorPanel" hidden>
+        <p id="errorText"></p>
+        <button id="retryButton" type="button">Try again</button>
+      </div>
+
+      <div id="tableView" class="tableView">
+        <div class="tableFrame">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Year</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Cast</th>
+                <th scope="col"><span class="visuallyHidden">Open details</span></th>
+              </tr>
+            </thead>
+            <tbody id="movieTableBody"></tbody>
+          </table>
+        </div>
+        <nav class="pagination" aria-label="Catalogue pages">
+          <button id="previousPageButton" type="button">Previous</button>
+          <span id="pageIndicator">Page 1</span>
+          <button id="nextPageButton" type="button">Next</button>
+        </nav>
+      </div>
+
+      <div id="galleryView" class="galleryView" hidden>
+        <div id="galleryGrid" class="galleryGrid"></div>
+        <div id="gallerySentinel" class="gallerySentinel" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Every title is generated in memory. Nothing here is stored.</p>
+    <p>Lumen Cinema  Task 5</p>
+  </footer>
+
+  <dialog id="trailerDialog" class="trailerDialog">
+    <div class="trailerShell">
+      <div class="trailerTopline">
+        <p id="trailerLabel">Lumen presentation</p>
+        <button id="closeTrailerButton" type="button" aria-label="Close trailer">Close</button>
+      </div>
+      <div class="screen">
+        <canvas id="trailerCanvas" width="1280" height="720"></canvas>
+        <button id="playTrailerButton" class="playTrailerButton" type="button" aria-label="Play trailer">
+          <span aria-hidden="true">▶</span>
+        </button>
+      </div>
+      <div class="trailerFooter">
+        <div>
+          <p id="trailerTitle"></p>
+          <p id="trailerMeta"></p>
+        </div>
+        <div class="timeline"><span id="trailerProgress"></span></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="/js/trailer.js" defer></script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
